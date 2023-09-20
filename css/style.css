@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /* ---------- Primary ----------  */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* ---------- Gradients ----------  */
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* ---------- Neutral ----------  */
+    --white: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+main {
+    box-shadow: 1px 1px 90px 1px rgb(182, 210, 233) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    max-width: 50rem;
+}
+
+.result {
+    background: linear-gradient(to top, hsla(241, 81%, 54%, 95%) 80%, hsla(252, 100%, 67%,100%) 100%);
+    width: 50%;
+    height: 100%;
+    padding: 1rem .3rem;
+    border-radius: 1.5rem;
+    color: var(--Light-lavender);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom, hsl(241, 72%, 46%) 50%, hsla(241, 72%, 46%, 10%) 100%);
+    background-color: var(--Violet-blue-circle);
+    border-radius: 50%;
+    padding: 6.5rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.circle p {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.circle span {
+    font-weight: 400;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--Light-lavender);
+    opacity: 60%;
+    
+}
+
+.result h2 {
+    color: white;
+    opacity: 70%;
+}
+
+.result h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+
+.result p {
+    text-align: center;
+    margin: .1rem 4rem;
+}
+
+.summary {
+    width: 50%;
+    height: 100%;
+    padding: 1rem 3rem;
+}
+
+.summary h2 {
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-item {
+    width: 100%;
+    border-radius: 1rem;
+    margin: .5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.summary-red-box {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+.summary-red-box h3 {
+    color: var(--light-red);
+}
+
+.summary-yellow-box {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+.summary-yellow-box h3 {
+    color: var(--orangey-yellow);
+}
+
+.summary-green-box {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+.summary-green-box h3 {
+    color: var(--green-teal);
+}
+
+.summary-blue-box {
+    background-color: hsla(234, 85%, 45%, 10%);
+}
+
+.summary-blue-box h3 {
+    color: var(--cobalt-blue);
+}
+
+.grey {
+    color: rgb(150, 150, 150);
+    font-weight: 700;
+    margin-left: 0.2rem;
+}
+
+.icon-text {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    background-color: rgb(34, 42, 58);
+    color: var(--Pale-blue);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: ease-in .4s;
+}
+
+button:hover {
+    background: linear-gradient(to top, hsla(241, 81%, 54%, 95%) 80%, hsla(252, 100%, 67%,100%) 100%);
+
+}
+
+
+footer {
+    margin-top: 2rem;
+}
+
+footer .attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
