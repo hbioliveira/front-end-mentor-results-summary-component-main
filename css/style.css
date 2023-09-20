@@ -191,12 +191,14 @@ button {
     width: 100%;
     border: none;
     border-radius: 2.5rem;
-    cursor: pointer;
-    transition: ease-in .4s;
-}
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;}
 
 button:hover {
     background: linear-gradient(to top, hsla(241, 81%, 54%, 95%) 80%, hsla(252, 100%, 67%,100%) 100%);
+    cursor: pointer;
 
 }
 
@@ -216,83 +218,40 @@ footer .attribution a {
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 375px) {
-
-    body {
-        /* height: 100vh;
-        width: 100vw; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-    }
-
     main {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1.5rem;
         width: 100vw;
         height: 100vh;
     }
 
     .result {
-        background: linear-gradient(to top, hsla(241, 81%, 54%, 95%) 80%, hsla(252, 100%, 67%,100%) 100%);
         width: 100%;
         height: 42%;
         padding: .1rem .3rem;
         border-radius: 0 0 2rem 2rem;
-        color: var(--Light-lavender);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .circle {
         width: 40px;
         height: 40px;
-        background: linear-gradient(to bottom, hsl(241, 72%, 46%) 50%, hsla(241, 72%, 46%, 10%) 100%);
-        background-color: var(--Violet-blue-circle);
-        border-radius: 50%;
         padding: 4.5rem;
         margin: 1.7rem auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        
     }
 
     .circle p {
-        font-weight: 800;
         font-size: 4rem;
     }
 
-    .circle span {
-        font-weight: 400;
-        font-size: 1rem;
-        white-space: nowrap;
-        color: var(--Light-lavender);
-        opacity: 60%;        
-    }
-
     .result h2 {
-        color: white;
-        opacity: 70%;
         font-size: 1.3rem;
         margin-top: -5%;
     }
 
     .result h1 {
-        color: white;
         font-size: 1.7rem;
     }
 
     .result p {
-        text-align: center;
         margin: .5rem 1rem .1rem 1rem;
     }
 
@@ -303,85 +262,8 @@ footer .attribution a {
     }
 
     .summary h2 {
-        text-align: left;
         margin-top: 1rem;
-        margin-bottom: 2rem;
-        font-size: 1.5rem;
-
-    }
-
-    .scores {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .summary-item {
-        width: 100%;
-        border-radius: 1rem;
-        margin: .5rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 1rem;
-    }
-
-    .summary-red-box {
-        background-color: hsla(0, 100%, 67%, 10%);
-    }
-
-    .summary-red-box h3 {
-        color: var(--light-red);
-    }
-
-    .summary-yellow-box {
-        background-color: hsla(39, 100%, 56%, 10%);
-    }
-
-    .summary-yellow-box h3 {
-        color: var(--orangey-yellow);
-    }
-
-    .summary-green-box {
-        background-color: hsla(166, 100%, 37%, 10%);
-    }
-
-    .summary-green-box h3 {
-        color: var(--green-teal);
-    }
-
-    .summary-blue-box {
-        background-color: hsla(234, 85%, 45%, 10%);
-    }
-
-    .summary-blue-box h3 {
-        color: var(--cobalt-blue);
-    }
-
-    .grey {
-        color: rgb(150, 150, 150);
-        font-weight: 700;
-        margin-left: 0.2rem;
-    }
-
-    .icon-text {
-        display: flex;
-        gap: 1rem;
-    }
-
-    button {
-        background-color: rgb(34, 42, 58);
-        color: var(--Pale-blue);
-        font-weight: 800;
-        font-size: 1.2rem;
-        margin: 2rem auto;
-        padding: 1.5rem;
-        width: 100%;
-        border: none;
-        border-radius: 2.5rem;
-        cursor: pointer;
-        transition: ease-in .4s;
+        font-size: 1.3rem;
     }
 
     footer {
